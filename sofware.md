@@ -1,0 +1,208 @@
+```
+   NAME : ARIJIT MONDAL
+   ROLL NO: 431221010018
+   STREAM : COMPUTER SCIENCE AND BUSINESS SYSTEM
+   SEMESTER : 3rd
+   YEAR : 2nd
+   PAPER NAME: SOFTWARE LAB
+```
+
+Q1.Develop an application on library management system where users can search, issue, return books.
+
+Code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Management System</title>
+</head>
+<style>
+  /* CSS Reset */
+  body {
+    margin: 0px;
+    padding: 0px;
+
+    background-image: url("https://img.freepik.com/free-vector/children-reading-books-library_1308-30864.jpg?w=1060&t=st=1669875079~exp=1669875679~hmac=b02f7a1a263863608531c6da70e3720c7f82786e27d76b8368df1c35d2952d48");
+    background-repeat: no-repeat;
+    background-size: 101% 104%;
+    
+  }
+
+  .left { 
+    position: absolute;
+    top: -38px;
+    left: 5px;
+   
+    display: inline-block;
+  
+  }
+
+  .middle {
+    display: block;
+    width: 50%;
+    top: 20px;
+    margin: 23px 249px;
+    
+  }
+
+  .right {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    display: inline-block;
+    
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar li {
+    display: inline-block;
+    font-size: 25px;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    padding: 34px 19px;
+    color: blueviolet;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: rgb(191, 16, 16);
+    padding: 34px 19px;
+  }
+
+  .search {
+
+    text-align: centerd;
+    display: inline-block;
+    color: rgb(242, 238, 24);
+    padding: 16px 21px;
+    margin: 10px;
+  }
+.search input
+{
+  
+  background-color: darkorange;
+  border: 3px solid rgba(0, 0, 255, 0.876);
+  font-size: 13px;
+  width:93%;
+  padding: 1px 2px;
+}
+  .left div {
+    color: aqua;
+    text-align: center;
+  }
+
+  img {
+    height: 56px;
+    width: 177px;
+    padding: 36px 0px;
+  }
+
+  .btn {
+    margin: 0px 9px;
+    color: white;
+    background: transparent;
+    background-color: rgb(10, 252, 34);
+    padding: 3px 4px;
+    border: 2px solid rgb(31, 8, 236);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: rgba(169, 169, 169, 0.864);
+  }
+
+  .container {
+    
+    margin: 77px -60px;
+    width: 18%;
+    padding: 122px;
+    border-radius: 28px;
+    text-align: left;
+    text-decoration: solid;
+  }
+
+  .form-group input {
+    text-align: center;
+    display: block;
+    width: 348px;
+    padding: 14px;
+    background-color: beige;
+    border: 2px solid black;
+    margin: 3px auto;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .container button {
+    display: block;
+    width: 140%;
+    margin: auto;
+  }
+</style>
+
+<body>
+  <header class="header">
+    <div class="left">
+      <img src="https://i.pinimg.com/originals/0a/cd/50/0acd5002683fbcf2b720004f201ee530.jpg" alt=""  />
+      
+    </div>
+    <div class="middle">
+      <ul class="navbar">
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">REGISTER</a></li>
+        <li><a href="">STATUS</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="search">
+        <input type="text" name="search" id="search" placeholder="Type to Search" />
+      </div>
+      <button class="btn">Call us now</button>
+      <button class="btn">Email us</button>
+  </header>
+  <div class="container">
+    <form action="backend.php">
+      <div class="form-group">
+        <input type="text" name="" placeholder="enter your name" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="enter student Id" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="enter your roll no." />
+      </div>
+      <div class="form-group">
+       
+        <input type="email" name="" placeholder="enter your email">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="enter your return book name" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="write an issue" />
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
+```
+Output:
+
+<img src = "Screenshot (15).png">

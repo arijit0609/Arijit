@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arijit Fitness</title>
+</head>
+<style>
+  /* CSS Reset */
+  body {
+    margin: 0px;
+    padding: 0px;
+
+    background-image: url("https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3ltJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: 101% 104%;
+    
+  }
+
+  .left { 
+    position: absolute;
+    top: -38px;
+    left: 10px;
+    display: inline-block;
+    /* border: 2px solid red;*/
+  }
+
+  .middle {
+    display: block;
+    width: 50%;
+    top: 20px;
+    margin: 28px 249px;
+    /* border: 2px solid rgb(90, 128, 0); */
+  }
+
+  .right {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+  }
+
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar li {
+    display: inline-block;
+    font-size: 25px;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+    padding: 34px 19px;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+    padding: 34px 19px;
+  }
+
+  .search {
+
+    text-align: centerd;
+    display: inline-block;
+    color: whitesmoke;
+    padding: 16px 21px;
+    margin: 10px;
+  }
+
+  .left div {
+    color: aqua;
+    text-align: center;
+  }
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .btn {
+    margin: 0px 9px;
+    color: white;
+    background: transparent;
+    background-color: rgb(252, 139, 10);
+    padding: 3px 4px;
+    border: 2px solid rgb(236, 95, 8);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: rgba(169, 169, 169, 0.864);
+  }
+
+  .container {
+    border: 2px solid rgb(251, 87, 11);
+    margin: 119px 460px;
+    width: 33%;
+    padding: 80px;
+    border-radius: 28px;
+  }
+
+  .form-group input {
+    text-align: center;
+    display: block;
+    width: 500px;
+    padding: 6px;
+    border: 2px solid black;
+    margin: 3px auto;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .container button {
+    display: block;
+    width: 103%;
+    margin: auto;
+  }
+</style>
+
+<body>
+  <header class="header">
+    <div class="left">
+      <img src="royal arijit.jpeg" alt="" />
+      <!-- <div>Arijit Fitness</div> -->
+    </div>
+    <div class="middle">
+      <ul class="navbar">
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">SERVICE</a></li>
+        <li><a href="">FITNESS</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="search">
+        <input type="text" name="search" id="search" placeholder="Type to Search" />
+      </div>
+      <button class="btn">Call us now</button>
+      <button class="btn">Email us</button>
+  </header>
+  <div class="container">
+    <form action="backend.php">
+      <div class="form-group">
+        <input type="text" name="" placeholder="enter your name" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="enter your age" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="enter your gender" />
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="enter your locality" />
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
